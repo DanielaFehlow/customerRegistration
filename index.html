@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js" defer></script>
+    <title>Customer Base</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header-title">Customer Base</h1>
+    </header>
+    <main>
+      <button type="button" class="button blue mobile" id="registerClient">
+        Register Client
+      </button>
+      <table id="tableCustomer" class="records">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Cell</th>
+            <th>City</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="container" id="container">
+        <div class="container-content">
+          <header class="container-header">
+            <h2>New Client</h2>
+            <span class="container-close" id="containerClose">&#10006;</span>
+          </header>
+          <form id="form" class="container-form">
+            <input
+              type="text"
+              id="name"
+              data-index="new"
+              class="container-screen"
+              placeholder="Client Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              class="container-screen"
+              placeholder="Client E-mail"
+              required
+            />
+            <input
+              type="text"
+              id="cell"
+              class="container-screen"
+              placeholder="Client Cell"
+              required
+            />
+            <input
+              type="text"
+              id="city"
+              class="container-screen"
+              placeholder="Client City"
+              required
+            />
+          </form>
+          <footer class="container-footer">
+            <button id="save" class="button green">Save</button>
+            <button id="cancel" class="button blue">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
